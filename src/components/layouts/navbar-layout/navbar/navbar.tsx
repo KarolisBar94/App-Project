@@ -41,6 +41,10 @@ const statefullPagesData = [
   { link: routes.AccordionPage, text: 'Accordion' },
   { link: routes.BadgePage, text: 'Badge' },
   { link: routes.ListPage, text: 'List' },
+  { link: routes.ChipPage, text: 'Chip' },
+  { link: routes.ToolTipPage, text: 'Tool Tip' },
+  { link: routes.TablePage, text: 'Table' },
+
 
 ];
 const expandBreakpoint: Breakpoint = 'lg';

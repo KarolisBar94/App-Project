@@ -25,6 +25,9 @@ import SelectPage from '../pages/select-page';
 import BottomNavigationPage from '../pages/bottom-navigation';
 import BadgePage from 'pages/badge';
 import ListPage from 'pages/list';
+import ChipPage from 'pages/chip';
+import ToolTipPage from 'pages/tool-tip';
+import TablePage from 'pages/table'
 
 const router = createBrowserRouter([
   {
@@ -122,6 +125,18 @@ const router = createBrowserRouter([
       {
         path: routes.ListPage,
         element: <ListPage />,
+      },
+      {
+        path: routes.ChipPage,
+        element: <ChipPage />,
+      },
+      {
+        path: routes.ToolTipPage,
+        element: <ToolTipPage />,
+      },
+      {
+        path: routes.TablePage,
+        element: <TablePage />,
       },
     ],
   },

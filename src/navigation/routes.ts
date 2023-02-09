@@ -23,6 +23,9 @@ const routes = {
   AvatarPage: '/avatar',
   BadgePage: '/badge',
   ListPage: '/list',
+  ChipPage: '/chip',
+  ToolTipPage: '/tooltip',
+  TablePage: '/table',
 } as const;
 
 export type Routes = typeof routes;

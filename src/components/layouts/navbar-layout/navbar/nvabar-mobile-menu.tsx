@@ -19,19 +19,21 @@ import NavbarMobileLinksAccordion from './navbar-mobile-acordion';
 type NavbarMobileMenuProps = {
   expandBreakpoint: Breakpoint,
   linksData: LinkData[],
-  linksGroup: {
+  linksGroups: {
     title: string,
     linksData: LinkData[],
-  }
+  }[]
 };
 
 const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
   expandBreakpoint,
   linksData,
-  linksGroup,
+  linksGroups,
 }) => {
   const [drawerOpen, setDrawerOpen] = React.useState<boolean>(false);
   const isExpanded = useMediaQuery((theme: Theme) => theme.breakpoints.up(expandBreakpoint));
+
+  const closeMenu = () => setDrawerOpen(false);
 
   return (
     <>
@@ -56,17 +58,20 @@ const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
             {linksData.map(({ link, text }) => (
               <MenuItem
                 key={link}
-                onClick={() => setDrawerOpen(false)}
+                onClick={closeMenu}
                 sx={{ p: 0 }}
               >
                 <NavbarMobileLink to={link}>{text}</NavbarMobileLink>
               </MenuItem>
             ))}
-            <NavbarMobileLinksAccordion
-              title={linksGroup.title}
-              linksData={linksGroup.linksData}
-              closeDrawer={() => setDrawerOpen(false)}
-            />
+            {linksGroups.map((linksGroup) => (
+              <NavbarMobileLinksAccordion
+                key={linksGroup.title}
+                title={linksGroup.title}
+                linksData={linksGroup.linksData}
+                closeMenu={closeMenu}
+              />
+            ))}
           </MenuList>
         </Box>
       </Drawer>

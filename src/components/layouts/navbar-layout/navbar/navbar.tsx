@@ -18,28 +18,28 @@ const presentationalPagesData = [
   { link: routes.RatingPage, text: 'Rating' },
 ];
 
-// const controlsPagesData = [
-//   { link: routes.ButtonPage, text: 'Button' },
-//   { link: routes.TextFieldPage, text: 'Text Field' },
-//   { link: routes.SelectPage, text: 'Select' },
-//   { link: routes.RadioButtonPage, text: 'Radios' },
-//   { link: routes.CheckboxPage, text: 'Checkbox' },
-//   { link: routes.AutoCompletePage, text: 'AutoComplete' },
-//   { link: routes.SwitchPage, text: 'Switch' },
-// ];
+const controlsPagesData = [
+  { link: routes.ButtonPage, text: 'Button' },
+  { link: routes.TextFieldPage, text: 'Text Field' },
+  { link: routes.SelectPage, text: 'Select' },
+  { link: routes.RadioButtonPage, text: 'Radios' },
+  { link: routes.CheckboxPage, text: 'Checkbox' },
+  { link: routes.AutoCompletePage, text: 'AutoComplete' },
+  { link: routes.SwitchPage, text: 'Switch' },
+];
 
-// const wrapperPagesData = [
-//   { link: routes.BoxPage, text: 'Box' },
-//   { link: routes.CardPage, text: 'Card' },
-//   { link: routes.ImageListPage, text: 'Image List' },
-//   { link: routes.DrawerPage, text: 'Drawer' },
-//   { link: routes.NavbarPage, text: 'Navbar' },
-// ];
+const wrapperPagesData = [
+  { link: routes.BoxPage, text: 'Box' },
+  { link: routes.CardPage, text: 'Card' },
+  { link: routes.ImageListPage, text: 'Image List' },
+  { link: routes.DrawerPage, text: 'Drawer' },
+  { link: routes.NavbarPage, text: 'Navbar' },
+];
 
-// const statefulPagesData = [
-//   { link: routes.BottomNavigationPage, text: 'Bottom Navigation' },
-//   { link: routes.AccordionPage, text: 'Accordion' },
-// ];
+const statefullPagesData = [
+  { link: routes.BottomNavigationPage, text: 'Bottom Navigation' },
+  { link: routes.AccordionPage, text: 'Accordion' },
+];
 const expandBreakpoint: Breakpoint = 'lg';
 
 const Navbar = () => (
@@ -52,10 +52,24 @@ const Navbar = () => (
       <NavbarMobileMenu
         expandBreakpoint={expandBreakpoint}
         linksData={linksData}
-        linksGroup={{
-          title: 'Presentational',
-          linksData: presentationalPagesData,
-        }}
+        linksGroups={[
+          {
+            title: 'Presentational',
+            linksData: presentationalPagesData,
+          },
+          {
+            title: 'Controls',
+            linksData: controlsPagesData,
+          },
+          {
+            title: 'Wrappers',
+            linksData: wrapperPagesData,
+          },
+          {
+            title: 'Statefull',
+            linksData: statefullPagesData,
+          },
+        ]}
       />
     </Toolbar>
   </AppBar>

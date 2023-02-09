@@ -1,7 +1,6 @@
 import React from 'react'
 import { Stack, Alert, AlertTitle, Button } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
-import { Action } from '@remix-run/router';
 
 const AlertPage = () => {
   return (

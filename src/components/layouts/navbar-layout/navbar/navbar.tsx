@@ -44,6 +44,8 @@ const statefullPagesData = [
   { link: routes.ChipPage, text: 'Chip' },
   { link: routes.ToolTipPage, text: 'Tool Tip' },
   { link: routes.TablePage, text: 'Table' },
+  { link: routes.AlertPage, text: 'Alert' },
+
 
 
 ];

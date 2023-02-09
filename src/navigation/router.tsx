@@ -27,7 +27,8 @@ import BadgePage from 'pages/badge';
 import ListPage from 'pages/list';
 import ChipPage from 'pages/chip';
 import ToolTipPage from 'pages/tool-tip';
-import TablePage from 'pages/table'
+import TablePage from 'pages/table';
+import AlertPage from 'pages/alert';
 
 const router = createBrowserRouter([
   {
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
       {
         path: routes.TablePage,
         element: <TablePage />,
+      },
+      {
+        path: routes.AlertPage,
+        element: <AlertPage />,
       },
     ],
   },

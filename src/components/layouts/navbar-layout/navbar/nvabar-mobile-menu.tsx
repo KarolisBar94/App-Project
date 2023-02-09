@@ -14,15 +14,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import NavbarMobileLink from './navbar-mobile-link';
 import LinkData from './link-data';
+import NavbarMobileLinksAccordion from './navbar-mobile-acordion';
 
 type NavbarMobileMenuProps = {
   expandBreakpoint: Breakpoint,
-  linksData: LinkData[]
+  linksData: LinkData[],
+  linksGroup: {
+    title: string,
+    linksData: LinkData[],
+  }
 };
 
 const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
   expandBreakpoint,
   linksData,
+  linksGroup,
 }) => {
   const [drawerOpen, setDrawerOpen] = React.useState<boolean>(false);
   const isExpanded = useMediaQuery((theme: Theme) => theme.breakpoints.up(expandBreakpoint));
@@ -48,10 +54,19 @@ const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
           <Toolbar />
           <MenuList sx={{ p: 0 }}>
             {linksData.map(({ link, text }) => (
-              <MenuItem key={link} onClick={() => setDrawerOpen(false)}>
+              <MenuItem
+                key={link}
+                onClick={() => setDrawerOpen(false)}
+                sx={{ p: 0 }}
+              >
                 <NavbarMobileLink to={link}>{text}</NavbarMobileLink>
               </MenuItem>
             ))}
+            <NavbarMobileLinksAccordion
+              title={linksGroup.title}
+              linksData={linksGroup.linksData}
+              closeDrawer={() => setDrawerOpen(false)}
+            />
           </MenuList>
         </Box>
       </Drawer>

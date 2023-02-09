@@ -1,19 +1,29 @@
 const routes = {
   HomePage: '/',
   TypographyPage: '/typography',
-  ButtonPage: '/buttons',
-  CheckmarksPage: '/checkmarks',
-  RadioButtonsPage: '/radios',
+  ButtonPage: '/button',
   TextFieldPage: '/textfield',
   SelectPage: '/select',
+  CheckMarkPage:'/checkmark',
+  RadioButtonPage: '/radios',
+  CheckboxPage: '/checkbox',
+  SwitchPage: '/switch',
+  RatingPage: '/rating',
+  AutoCompletePage: '/autocomplete',
+  BoxPage: '/box',
+  CardPage: '/card',
+  AccordionPage: '/accordion',
   ImageListPage: '/imagelist',
-  NavBarPage: '/muinavbar',
-  LinkPages: '/link',
-  BreadCrumbsPage: '/breadcrumbs',
+  NavbarPage: '/navbar',
+  LinkPage: '/link',
+  BreadcrumbsPage: '/breadcrumbs',
   DrawerPage: '/drawer',
-  SpeedDialPage: '/speeddial',
-  BottomNavigationPage: '/bottomnavigation',
+  SpeedDialPage: '/speedDial',
+  BottomNavigationPage: '/bottomNavigation',
   AvatarPage: '/avatar',
 } as const;
+
+export type Routes = typeof routes;
+export type RouteLink = Routes[keyof Routes];
 
 export default routes;

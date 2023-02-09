@@ -39,6 +39,9 @@ const wrapperPagesData = [
 const statefullPagesData = [
   { link: routes.BottomNavigationPage, text: 'Bottom Navigation' },
   { link: routes.AccordionPage, text: 'Accordion' },
+  { link: routes.BadgePage, text: 'Badge' },
+  { link: routes.ListPage, text: 'List' },
+
 ];
 const expandBreakpoint: Breakpoint = 'lg';
 

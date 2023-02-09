@@ -21,6 +21,8 @@ const routes = {
   SpeedDialPage: '/speedDial',
   BottomNavigationPage: '/bottomNavigation',
   AvatarPage: '/avatar',
+  BadgePage: '/badge',
+  ListPage: '/list',
 } as const;
 
 export type Routes = typeof routes;

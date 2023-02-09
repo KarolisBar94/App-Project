@@ -23,6 +23,8 @@ import routes from './routes';
 import ButtonPage from '../pages/button-page';
 import SelectPage from '../pages/select-page';
 import BottomNavigationPage from '../pages/bottom-navigation';
+import BadgePage from 'pages/badge';
+import ListPage from 'pages/list';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: routes.SwitchPage,
         element: <SwitchPage />,
+      },
+      {
+        path: routes.AvatarPage,
+        element: <AvatarPage />,
       },
       {
         path: routes.RatingPage,
@@ -110,8 +116,12 @@ const router = createBrowserRouter([
         element: <BottomNavigationPage />,
       },
       {
-        path: routes.AvatarPage,
-        element: <AvatarPage />,
+        path: routes.BadgePage,
+        element: <BadgePage />,
+      },
+      {
+        path: routes.ListPage,
+        element: <ListPage />,
       },
     ],
   },

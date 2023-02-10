@@ -29,6 +29,8 @@ import ChipPage from 'pages/chip';
 import ToolTipPage from 'pages/tool-tip';
 import TablePage from 'pages/table';
 import AlertPage from 'pages/alert';
+import SnackBarPage from 'pages/snackbar';
+import DialogPage from 'pages/dialog';
 
 const router = createBrowserRouter([
   {
@@ -142,6 +144,14 @@ const router = createBrowserRouter([
       {
         path: routes.AlertPage,
         element: <AlertPage />,
+      },
+      {
+        path: routes.SnackBarPage,
+        element: <SnackBarPage />,
+      },
+      {
+        path: routes.DialogPage,
+        element: <DialogPage />,
       },
     ],
   },

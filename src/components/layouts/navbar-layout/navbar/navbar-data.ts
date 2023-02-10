@@ -16,6 +16,9 @@ export const linksGroups = [
       { link: routes.SpeedDialPage, text: 'Speed Dial' },
       { link: routes.AvatarPage, text: 'Avatar' },
       { link: routes.RatingPage, text: 'Rating' },
+      { link: routes.SnackBarPage, text: 'Snack Bar' },
+      { link: routes.DialogPage, text: 'Dialog' },         
+
     ],
   },
   {
@@ -51,6 +54,8 @@ export const linksGroups = [
       { link: routes.BadgePage, text: 'Badge' },
       { link: routes.ChipPage, text: 'Chip' },
       { link: routes.ListPage, text: 'List' },
+      
+
 
 
 

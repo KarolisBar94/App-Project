@@ -17,7 +17,11 @@ export const linksGroups = [
       { link: routes.AvatarPage, text: 'Avatar' },
       { link: routes.RatingPage, text: 'Rating' },
       { link: routes.SnackBarPage, text: 'Snack Bar' },
-      { link: routes.DialogPage, text: 'Dialog' },         
+      { link: routes.DialogPage, text: 'Dialog' },
+      { link: routes.ProgressPage, text: 'Progress' },
+      { link: routes.SkeletonPage, text: 'Skeleton' },       
+
+
 
     ],
   },

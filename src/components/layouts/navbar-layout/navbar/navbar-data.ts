@@ -45,6 +45,18 @@ export const linksGroups = [
     linksData: [
       { link: routes.BottomNavigationPage, text: 'Bottom Navigation' },
       { link: routes.AccordionPage, text: 'Accordion' },
+      { link: routes.AlertPage, text: 'Alert' },
+      { link: routes.TablePage, text: 'Table' },
+      { link: routes.ToolTipPage, text: 'Tool' },
+      { link: routes.BadgePage, text: 'Badge' },
+      { link: routes.ChipPage, text: 'Chip' },
+      { link: routes.ListPage, text: 'List' },
+
+
+
+
+
+
     ],
   },
 ];

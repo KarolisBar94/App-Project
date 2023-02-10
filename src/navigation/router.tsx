@@ -16,7 +16,7 @@ import NavbarPage from 'pages/mui-navbar';
 import LinkPage from 'pages/link';
 import BreadcrumbsPage from 'pages/bread-crumbs';
 import DrawerPage from 'pages/drawer';
-import SpeedDialPage from 'pages/select-page';
+import SpeedDialPage from 'pages/speed-dial';
 import AvatarPage from 'pages/avatar';
 import RadioButtonPage from '../pages/radio-button-page';
 import routes from './routes';

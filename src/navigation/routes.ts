@@ -31,6 +31,7 @@ const routes = {
   DialogPage: '/dialog',
   ProgressPage: '/progress',
   SkeletonPage: '/skeleton',
+  LoadingButtonPage: '/loadingbutton'
 } as const;
 
 export type Routes = typeof routes;

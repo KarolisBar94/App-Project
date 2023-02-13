@@ -19,7 +19,9 @@ export const linksGroups = [
       { link: routes.SnackBarPage, text: 'Snack Bar' },
       { link: routes.DialogPage, text: 'Dialog' },
       { link: routes.ProgressPage, text: 'Progress' },
-      { link: routes.SkeletonPage, text: 'Skeleton' },       
+      { link: routes.SkeletonPage, text: 'Skeleton' }, 
+      { link: routes.LoadingButtonPage, text: 'Loading' },       
+
 
 
 

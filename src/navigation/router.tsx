@@ -1,4 +1,5 @@
 import React from 'react';
+import { LocalizationProvider } from '@mui/lab';
 import { createBrowserRouter } from 'react-router-dom';
 import NavbarLayout from 'components/layouts/navbar-layout/navbar-layout';
 import TypographyPage from 'pages/typography-page';
@@ -33,6 +34,8 @@ import SnackBarPage from 'pages/snackbar';
 import DialogPage from 'pages/dialog';
 import ProgressPage from 'pages/progress';
 import SkeletonPage from 'pages/skeleton';
+import LoadingButtonPage from 'pages/loading-button';
+
 
 const router = createBrowserRouter([
   {
@@ -162,6 +165,10 @@ const router = createBrowserRouter([
       {
         path: routes.SkeletonPage,
         element: <SkeletonPage />,
+      },
+      {
+        path: routes.LoadingButtonPage,
+        element: <LoadingButtonPage />,
       },
     ],
   },
